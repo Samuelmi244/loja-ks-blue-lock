@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>KS BLOX</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #111;
+            border: 2px solid #444;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .nome {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            font-size: 20px;
+            color: #00ff88;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .botao {
+            background-color: #00ff88;
+            color: #000;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #00cc6e;
+        }
+    </style>
+
+    <script>
+        function pagarPix(nome, valor) {
+            alert(
+                "PAGAMENTO VIA PIX\n\n" +
+                "Produto: " + nome + "\n" +
+                "Valor: " + valor + "\n\n" +
+                "Chave Pix:\n233e828f-3607-464a-8922-2055e59a95bc\n\n" +
+                "Após pagar, mande o comprovante."
+            );
+        }
+    </script>
+</head>
+<body>
+
+    <h1>KS BLOX</h1>
+
+    <div class="produtos">
+
+        <div class="card">
+            <div class="nome">DOM LORENZO</div>
+            <div class="preco">R$ 7,00</div>
+            <button class="botao" onclick="pagarPix('DOM LORENZO', 'R$ 7,00')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <div class="nome">NEL RIN</div>
+            <div class="preco">R$ 10,00</div>
+            <button class="botao" onclick="pagarPix('NEL RIN', 'R$ 10,00')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <div class="nome">LOKI</div>
+            <div class="preco">R$ 15,00</div>
+            <button class="botao" onclick="pagarPix('LOKI', 'R$ 15,00')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <div class="nome">HIORI</div>
+            <div class="preco">R$ 2,00</div>
+            <button class="botao" onclick="pagarPix('HIORI', 'R$ 2,00')">Comprar</button>
+        </div>
+
+        <div class="card">
+            <div class="nome">GAGAMARU</div>
+            <div class="preco">R$ 2,00</div>
+            <button class="botao" onclick="pagarPix('GAGAMARU', 'R$ 2,00')">Comprar</button>
+        </div>
+
+    </div>
+
+</body>
+              </html>
